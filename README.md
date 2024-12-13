@@ -3,10 +3,11 @@
 [Pixie](https://github.com/pixiemc) + [Mixin](https://github.com/SpongePowered/Mixin) = Pixin
 
 It makes Pixie work via a mixin. Works on any version of fabric. (thanks to [curseforge/pixiemod for the multiversion enlightenment](https://codeberg.org/cursefroge/PixieMod))
+A (1.8) forge port is available [here](https://github.com/AnotherPillow/PixinForge)
 
 ## Usage
 
-1. Install Essential & Pixin
+1. Install Essential & [Pixin](https://github.com/AnotherPillow/Pixin)
 2. Run the game once with Essential
 3. Remove the original Essential jar from your mods folder
 4. Copy the actual Essential mod from `<minecraft dir>/essential` (it'll be a .jar and be something like `Essential (fabric_1.20.1).jar`) to your mods folder.
