@@ -15,12 +15,13 @@ import java.net.URI;
 public class EssentialConnectionMixin {
     @SuppressWarnings("UnresolvedMixinReference")
     @Redirect(
-            method = "<init>",
+            method = "<clinit>",
             at = @At(value = "INVOKE", target = "java/net/URI.create(Ljava/lang/String;)Ljava/net/URI;")
     )
     private static URI redirectUriCreate(String originalUri) {
         String modifiedUri = originalUri.replace("essential.gg", "pixie.rip");
         System.out.println("[Pixin] Original URI: " + originalUri + " , replacing with " + modifiedUri);
+        System.out.println("[Pixin] Ignore the below warning from Essential. It may be ignored");
         return URI.create(modifiedUri);
     }
 }
