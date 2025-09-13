@@ -13,6 +13,15 @@ A 1.8 forge port is available [here](https://github.com/AnotherPillow/PixinForge
 3. Remove the original Essential jar from your mods folder
 4. Copy the actual Essential mod from `<minecraft dir>/essential` (it'll be a .jar and be something like `Essential (fabric_1.20.1).jar`) to your mods folder.
 5. Run the game
+6. If needed, adjust the [config](#Config)
+
+## Config
+
+The config can be modified in `<minecraft dir>/config/pixin.json`.
+
+### Fields
+
+- `url`: Modifies the connection URI. Default `wss://connect.pixie.rip/v1` (which is currently non-functional).
 
 ## Clarifications of Licenses
 

@@ -7,6 +7,7 @@ import java.util.Enumeration;
 
 public class Pixin implements ModInitializer {
 
+    public static Config config = new Config();
 
     @Override
     public void onInitialize() {
